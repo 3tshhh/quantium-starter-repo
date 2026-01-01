@@ -2,7 +2,7 @@ import csv
 from pathlib import Path
 
 data = Path("./data")
-with open("./output/filtered_data.csv", "a", newline="") as output_file:
+with open("filtered_data.csv", "a", newline="") as output_file:
     daily_sales_write = csv.writer(output_file,delimiter=",")
     line_count = 0
     for file in data.glob("*.csv"):
